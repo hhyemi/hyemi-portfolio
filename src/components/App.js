@@ -8,14 +8,15 @@ import Projects from './Projects/Projects';
 import Footer from './Footer/Footer';
 
 function App() {
+  const prefix = process.env.NODE_ENV === 'production' ? 'https://hhyemi.github.io/hyemi-portfolio' : '';
   return (
     <>
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Footer />
+      <Header prefix={prefix} />
+      <Home prefix={prefix} />
+      <About prefix={prefix} />
+      <Skills prefix={prefix} />
+      <Projects prefix={prefix} />
+      <Footer prefix={prefix} />
     </>
   );
 }
