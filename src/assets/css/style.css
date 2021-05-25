@@ -244,7 +244,10 @@ html {
 }
 
 #projects .row{
+  border: 1px solid #e4e4e4;
+  padding: 29px;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 #projects img{
@@ -258,7 +261,7 @@ html {
   float: left;
   color: #191919;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.9;
   word-break: break-all;
   margin-bottom: 0.5rem;
 }
@@ -277,10 +280,25 @@ html {
   float: right;
 }
 
-dd p{
+.tec-dl dd p{
   margin-top: 0.5rem;
   margin-bottom: 0rem;
 }
+
+.fun-dl dd p{
+    margin-top: 0rem; 
+    margin-bottom: 2rem;
+}
+
+.fun-dl a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.fun-dl a:hover {
+  color: rgb(96 96 96);
+}
+
 
 .carousel{
   margin-top: 8rem;
@@ -312,11 +330,66 @@ dd p{
   background: #eae9e9;
 }
 
+.project-card .fun-dl span{
+  padding: 10px 25px 10px 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid;
+  border-color: #e4e4e4;
+  background-color: #f0f0f096;
+}
+
+/* career */
+#career .row{
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+
 /* footer */
 footer{
   background-color: #f0f0f0;
+  color: #fff;
+  padding: 0 0 4.8rem 0;
 }
 
 footer p{
   margin: 0;
 }
+
+footer i {
+  margin: 1rem 0 1.6rem;
+  cursor: pointer;
+}
+
+footer .nav-link{
+  text-align: center;
+  color: black;
+}
+
+footer .nav-link:hover{
+  color: rgb(76 76 76);
+}
+
+.social-links, footer .footer__text{
+  text-align: center;
+  color:gray; 
+}
+
+footer a {
+  color: #000000;
+}
+
+footer a:hover {
+  color: rgb(96 96 96);
+  transition: all .3s ease-in-out;
+  transform: translateY(-2px);
+}
+
+footer i:hover {
+  color: rgb(96 96 96);
+  transition: all .3s ease-in-out;
+  transform: translateY(-2px);
+}
+

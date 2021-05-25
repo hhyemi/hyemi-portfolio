@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 
 const ProjectCard = ({ project, prefix }) => {
-  const { id, title, content, items, term, personnel, front, back, func } = project;
+  const { id, title, content, items, term, personnel, front, back, func, api, individual, video, git } = project;
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -32,12 +32,12 @@ const ProjectCard = ({ project, prefix }) => {
     </CarouselItem>
   ));
   return (
-    <Row>
+    <Row className="project-card">
       <Col lg={6} sm={12}>
-        <h3 className="project-wrapper__text-title">
+        <h3>
           <b>{title}</b>
         </h3>
-        <div className="project-wrapper__text">
+        <div>
           <div className="project-detail">
             <div>
               {content}
@@ -49,7 +49,7 @@ const ProjectCard = ({ project, prefix }) => {
               <dl>
                 <dt>개발인원</dt> <dd>{personnel}</dd>
               </dl>
-              <dl>
+              <dl className="tec-dl">
                 <dt>사용기술</dt>
                 <dd>
                   ㆍ <b>Frontend</b> <br />
@@ -59,20 +59,35 @@ const ProjectCard = ({ project, prefix }) => {
                     ㆍ <b>Backend</b> <br />
                     {back}
                   </p>
+                  {api && (
+                    <p>
+                      ㆍ <b>API</b> <br />
+                      {api}
+                    </p>
+                  )}
                 </dd>
               </dl>
-              <dl>
-                <dt>기능</dt>
-                <dd>{func}</dd>
+              <dl className="fun-dl">
+                <dt>{individual ? '기능' : '담당업무'}</dt>
+                <dd>
+                  <p>{func}</p>
+                  <span>
+                    <a target="_blank" href={git} rel="noreferrer">
+                      GitHub
+                    </a>
+                  </span>
+                  {video && (
+                    <span>
+                      <a target="_blank" href={video} rel="noreferrer">
+                        Video
+                      </a>
+                    </span>
+                  )}
+                </dd>
               </dl>
             </div>
           </div>
-          <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--hero" href="#">
-            See Live
-          </a>
-          <a target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main" href="#">
-            Source Code
-          </a>
+          <br />
         </div>
       </Col>
       <Col lg={6} sm={12}>
@@ -97,8 +112,13 @@ ProjectCard.propTypes = {
     front: PropTypes.string,
     back: PropTypes.string,
     func: PropTypes.string,
+    api: PropTypes.string,
+    git: PropTypes.string,
+    video: PropTypes.string,
+    individual: PropTypes.bool,
     items: PropTypes.array
-  }).isRequired
+  }).isRequired,
+  prefix: PropTypes.string.isRequired
 };
 
 export default ProjectCard;
