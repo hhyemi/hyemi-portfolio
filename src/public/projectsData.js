@@ -1,11 +1,11 @@
 import { nanoid } from 'nanoid';
 
-import main from '../assets/img/main.png';
-import cal from '../assets/img/cal.png';
-import todo from '../assets/img/todo.png';
-import memo from '../assets/img/memo.png';
-import comm from '../assets/img/comm.png';
-import stop from '../assets/img/stop.png';
+// import main from '../assets/img/main.png';
+// import cal from '../assets/img/cal.png';
+// import todo from '../assets/img/todo.png';
+// import memo from '../assets/img/memo.png';
+// import comm from '../assets/img/comm.png';
+// import stop from '../assets/img/stop.png';
 
 // PROJECTS DATA
 // eslint-disable-next-line import/prefer-default-export
@@ -30,27 +30,27 @@ cookie-parser, passport dotenv, morgan multer, ejs nodemailer`,
 `,
     items: [
       {
-        src: main,
+        src: 'main.png',
         caption: '메인페이지'
       },
       {
-        src: cal,
+        src: 'cal.png',
         caption: '캘린더'
       },
       {
-        src: todo,
+        src: 'todo.png',
         caption: '투두리스트'
       },
       {
-        src: memo,
+        src: 'memo.png',
         caption: '메모'
       },
       {
-        src: comm,
+        src: 'comm.png',
         caption: '커뮤니티'
       },
       {
-        src: stop,
+        src: 'stop.png',
         caption: '스탑워치'
       }
     ]

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Fade, NavLink } from 'reactstrap';
+import { Container, NavLink } from 'reactstrap';
 import Typist from 'react-typist';
 
 const Home = () => (

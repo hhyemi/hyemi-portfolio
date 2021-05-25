@@ -2,14 +2,14 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 // eslint-disable-next-line arrow-body-style
-const About = () => {
+const About = ({ prefix }) => {
   return (
     <section id="about">
       <Container>
         <h3 className="page-title">About me</h3>
         <Row>
           <Col className="col-md-3">
-            <img className="img-resume" alt="..." src={require('../../assets/img/my.jpg')} />
+            <img className="img-resume" alt="..." src={`${prefix}/public/img/my.jpg`} />
           </Col>
           <Col className="col-md-9 text-col">
             “인생의 위대한 목표는 지식이 아니라 행동이다” 인 저의 좌우명에 따라 저는 어렸을 때부터 과감한 편이었으며

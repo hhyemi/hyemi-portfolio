@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, prefix }) => {
   const { id, title, content, items, term, personnel, front, back, func } = project;
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
 
   const slides = items.map((item) => (
     <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={item.src}>
-      <img src={item.src} alt={item.altText} />
+      <img src={`${prefix}/public/img/${item.src}`} alt={item.altText} />
       <CarouselCaption captionText={item.caption} />
     </CarouselItem>
   ));
