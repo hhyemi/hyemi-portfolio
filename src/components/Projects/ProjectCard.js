@@ -27,7 +27,7 @@ const ProjectCard = ({ project, prefix }) => {
 
   const slides = items.map((item) => (
     <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={item.src}>
-      <img src={`${prefix}/public/img/${item.src}`} alt={item.altText} />
+      <img src={`${prefix}/img/${item.src}`} alt={item.altText} />
       <CarouselCaption captionText={item.caption} />
     </CarouselItem>
   ));

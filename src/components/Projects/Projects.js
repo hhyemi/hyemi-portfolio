@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 
-import { projectsData } from '../../public/projectsData';
+import { projectsData } from '../../../public/data/projectsData';
 import ProjectCard from './ProjectCard';
 
 // eslint-disable-next-line arrow-body-style
