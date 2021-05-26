@@ -8,18 +8,21 @@ import Projects from './Projects/Projects';
 import Career from './Career/Career';
 import Footer from './Footer/Footer';
 
+import { PortfolioProvider } from '../context/context';
+
+import { prefix } from '../config/config';
+
 function App() {
-  const prefix = process.env.NODE_ENV === 'production' ? 'https://hhyemi.github.io/hyemi-portfolio' : '';
   return (
-    <>
-      <Header prefix={prefix} />
-      <Home prefix={prefix} />
-      <About prefix={prefix} />
-      <Skills prefix={prefix} />
-      <Projects prefix={prefix} />
-      <Career prefix={prefix} />
-      <Footer prefix={prefix} />
-    </>
+    <PortfolioProvider value={{ prefix }}>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Career />
+      <Footer />
+    </PortfolioProvider>
   );
 }
 

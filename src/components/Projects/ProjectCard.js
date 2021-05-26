@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import PortfolioContext from '../../context/context';
 
-const ProjectCard = ({ project, prefix }) => {
+const ProjectCard = ({ project }) => {
+  const { prefix } = useContext(PortfolioContext);
+
   const { id, title, content, items, term, personnel, front, back, func, api, individual, video, git } = project;
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -117,8 +120,7 @@ ProjectCard.propTypes = {
     video: PropTypes.string,
     individual: PropTypes.bool,
     items: PropTypes.array
-  }).isRequired,
-  prefix: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default ProjectCard;

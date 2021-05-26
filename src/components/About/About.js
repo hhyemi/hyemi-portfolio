@@ -1,8 +1,10 @@
-import React from 'react';
-import { Container, Row, Col, Media } from 'reactstrap';
+import React, { useContext } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import PortfolioContext from '../../context/context';
 
-// eslint-disable-next-line arrow-body-style
-const About = ({ prefix }) => {
+const About = () => {
+  const { prefix } = useContext(PortfolioContext);
+
   return (
     <section id="about">
       <Container>

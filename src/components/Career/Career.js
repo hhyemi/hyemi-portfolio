@@ -1,9 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
 import { CardSubtitle, CardText, CardTitle, Col, Container, Row } from 'reactstrap';
+import PortfolioContext from '../../context/context';
 
-// eslint-disable-next-line arrow-body-style
-const Career = ({ prefix }) => {
+const Career = () => {
+  const { prefix } = useContext(PortfolioContext);
+
   return (
     <section id="career">
       <Container>
@@ -151,10 +152,6 @@ const Career = ({ prefix }) => {
       </Container>
     </section>
   );
-};
-
-Career.propTypes = {
-  prefix: PropTypes.string.isRequired
 };
 
 export default Career;
