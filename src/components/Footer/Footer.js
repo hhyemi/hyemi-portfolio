@@ -12,8 +12,14 @@ const Footer = () => {
           </NavLink>
         </span>
         <div className="social-links">
+          <a href="mailto:dlgpal9508@gmail.com" rel="noopener noreferrer" target="_blank">
+            <i className="far fa-envelope fa-3x" />
+          </a>
           <a href="https://github.com/hhyemi" rel="noopener noreferrer" target="_blank">
             <i className="fab fa-github fa-3x" />
+          </a>
+          <a href="https://hhyemi.github.io/" rel="noopener noreferrer" target="_blank">
+            <i className="fab fa-blogger fa-3x" />
           </a>
         </div>
         <hr />

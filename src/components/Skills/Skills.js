@@ -6,11 +6,12 @@ const Skills = () => {
   return (
     <section id="skills">
       <Container>
+        <h3 className="page-title">Skills</h3>
         <Row>
-          <Col className="col-md-3">
+          <Col lg={3} sm={12} className="skill-title">
             <b>Frontend</b>
           </Col>
-          <Col className="col-md-9">
+          <Col lg={9} sm={12} className="skill-list">
             <Row>▪️ &ensp;JavaScript(ES6), jQuery, jsp</Row>
             <Row>▪️ &ensp;HTML, CSS</Row>
             <Row>▪️ &ensp;React, Redux, Redux-saga, Next</Row>
@@ -20,10 +21,10 @@ const Skills = () => {
         </Row>
         <hr />
         <Row className="back">
-          <Col className="col-md-3">
+          <Col lg={3} sm={12} className="skill-title">
             <b>Backend</b>
           </Col>
-          <Col className="col-md-9">
+          <Col lg={9} sm={12} className="skill-list">
             <Row>▪️ &ensp;Java, C</Row>
             <Row>▪️ &ensp;Spring, Junit</Row>
             <Row>▪️ &ensp;axios, Restful API</Row>
@@ -34,10 +35,10 @@ const Skills = () => {
         </Row>
         <hr />
         <Row className="back">
-          <Col className="col-md-3">
+          <Col lg={3} sm={12} className="skill-title">
             <b>Etc</b>
           </Col>
-          <Col className="col-md-9">
+          <Col lg={9} sm={12} className="skill-list">
             <Row>▪️ &ensp;Tomcat, Jenkins</Row>
             <Row>▪️ &ensp;Git, GitHub, Sourcetree</Row>
             <Row>▪️ &ensp;Visual Studio Code, IntelliJ, Eclipse</Row>

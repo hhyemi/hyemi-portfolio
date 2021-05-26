@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container } from 'reactstrap';
 
 import { projectsData } from '../../../public/data/projectsData';
@@ -16,6 +17,10 @@ const Projects = ({ prefix }) => {
       </Container>
     </section>
   );
+};
+
+Projects.propTypes = {
+  prefix: PropTypes.string.isRequired
 };
 
 export default Projects;

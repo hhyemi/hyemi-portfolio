@@ -7,7 +7,7 @@ export const projectsData = [
     individual: true,
     title: 'job-up (직업을 잡어)',
     content: '취업준비생을 위한 일정관리와 정보기록 및 공유를 위한 취업관리 웹사이트 📝 ✏️ ',
-    term: '2021-04.12 ~ 2021-05.21',
+    term: '2021.04.12 ~ 2021.05.21',
     personnel: '1명 (개인프로젝트)',
     front: `react, next immer, faker, prop-types redux, redux-saga
 styled-components, fortawesome, reactstrap chart.js, tui-calendar
@@ -56,7 +56,7 @@ cookie-parser, passport dotenv, morgan multer, ejs nodemailer`,
     title: '보호할개 (유기견 보호 웹사이트)',
     content:
       '반려견의 입양·분양, 스토리펀딩 , 관련정보 및 상품 판매를 회원들에게 제공함으로써 유기견 없는 사회를 실현하고자 하는 시스템 🐶 ❤️',
-    term: '2019-06 ~ 2019-08',
+    term: '2019.06 ~ 2019.08',
     personnel: '5명',
     front: `JavaScript, JSP, jQuery, ajax
 HTML5, CSS3, BootStrap, Sweetalert, CKEditor4`,
@@ -98,7 +98,7 @@ Node.js, NPM, Socket.io, Express`,
     title: 'Hyemi Shop (쇼핑몰)',
     content:
       '사용자에게 쇼핑몰 제품을 구매, 장바구니, 후기, Q&A를 제공하고 관리자페이지에서 재고관리 배송시스템 등 쇼핑몰의 전반적인 기능을 제공하는 시스템 🎁 ',
-    term: '2019-05 ~ 2019-06',
+    term: '2019.05 ~ 2019.06',
     personnel: '1명 (개인프로젝트)',
     front: `JavaScript, JSP, jQuery, ajax
 HTML5, CSS3, BootStrap`,

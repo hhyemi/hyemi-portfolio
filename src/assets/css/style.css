@@ -27,11 +27,10 @@ html {
 
 /* 공통 */
 .page-title {
-  padding: 30px;
   text-align: center;
   line-height: 28px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 1200px){
@@ -41,16 +40,39 @@ html {
 }
 
 @media (min-width: 1200px){
- #projects .container {
+  #projects .container {
     max-width: 1540px;
   }
 }
 
 @media (min-width: 1200px){
   .home-section .container {
-     max-width: 100%
-   }
- }
+    max-width: 100%
+  }
+}
+
+@media (min-width: 300px) { 
+  html { font-size: 80%; } 
+} 
+
+@media (min-width: 300px) { 
+  .Typist { font-size: 50%; } 
+} 
+
+
+@media (min-width: 700px) { 
+  html, .Typist { font-size: 80%; } 
+} 
+
+@media (min-width: 1200px) { 
+  html, .Typist { font-size: 100%; } 
+}
+
+@media (max-width: 37.5em){
+  .container {
+      padding: 0 2rem;
+  }
+}
 
 /* header */
 .header-div{
@@ -70,7 +92,7 @@ html {
 .header-div a {
   color: #000000;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .header-div a:hover {
@@ -108,17 +130,6 @@ html {
   font-size: 3.5rem;
 }
 
-@media (min-width: 300px) { 
-  html { font-size: 48%; } 
-} 
-
-@media (min-width: 700px) { 
-  html { font-size: 80%; } 
-} 
-
-@media (min-width: 1200px) { 
-  html { font-size: 100%; } 
-}
 
 .continue {
   display: block;
@@ -184,24 +195,56 @@ html {
   z-index: -1;
 }
 
-#about .img-resume{
-  width: 60%;
-  height: auto;
+#about .page-title{    
+  margin-bottom: 3rem;
 }
 
-#about .row{
-  text-align: center;
+#about .img-resume{
+  width: 10rem;
+  height: auto;
+  margin-bottom: 3rem;
 }
 
 #about .text-col{
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
+
+#about dl{
+  width: calc(100%);
+  display: block;
+  float: left;
+  color: #191919;
+  line-height: 1.6;
+  word-break: break-all;
+  margin-bottom: 0.5rem;
+}
+
+#about dt{
+  font-weight: 100;
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+  color: #999;
+}
+
+#about dd{
+  white-space: pre-wrap;
+  width: calc(100% - 105px);
+  float: right;
+}
+
+#about .img-col {
+  text-align: center;
+}
+
+.tec-dl dd p{
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
 /* skills */
 #skills {
   background-color: #f0f0f0;
-  min-height: 100vh;
-  height: 100vh;
   display: flex;
   align-items: center;
   border-bottom: 0;
@@ -211,23 +254,31 @@ html {
   bottom: 0;
   right: 0;
   z-index: -1;
+  padding-top: 6rem;
 }
 
-#skills h3{
-  padding: 30px;
-  text-align: center;
-  line-height: 28px;
-  font-weight: bold;
-  font-size: 25px;
+#skills .container{
+ margin-bottom: 6rem;
+}
+
+#skills .page-title{
+  margin-bottom: 3rem;
 }
 
 #skills b{
-  font-size: 25px;
+  font-size: 1.4rem;
 }
 
-#skills .col-md-9 .row{
+#skills .skill-title{
+  margin-bottom: 1rem;
+}
+
+#skills .skill-list .row{
   padding-bottom: 1rem;
-  font-size: 20px;
+  font-size: 1.25rem;
+  margin-right: 0; 
+  margin-left: 0;
+
 }
 
 /* projects */
@@ -241,13 +292,13 @@ html {
   bottom: 0;
   right: 0;
   z-index: -1;
+  padding-top: 6rem;
 }
 
 #projects .row{
   border: 1px solid #e4e4e4;
   padding: 29px;
   margin-top: 3rem;
-  margin-bottom: 5rem;
 }
 
 #projects img{
@@ -260,7 +311,7 @@ html {
   display: block;
   float: left;
   color: #191919;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.9;
   word-break: break-all;
   margin-bottom: 0.5rem;
@@ -341,9 +392,18 @@ html {
 }
 
 /* career */
+#career{
+  padding-top: 6rem;
+}
+
 #career .row{
   margin-top: 3rem;
   margin-bottom: 8rem;
+}
+
+#career .img-resume{
+  width: 12%;
+  height: auto;
 }
 
 
@@ -393,3 +453,6 @@ footer i:hover {
   transform: translateY(-2px);
 }
 
+footer .social-links a {
+  margin-right: 2rem;
+}

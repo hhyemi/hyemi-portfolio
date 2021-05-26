@@ -11,6 +11,7 @@ const Index = () => {
         <meta charSet="utf-8" />
         <title>Hyemi Portfolio</title>
         <html lang="ko" />
+        <link rel="shortcut icon" href="/img/favicon.ico" />
         <meta name="description" content="Hyemi Portfolio" />
       </Helmet>
       <App />
