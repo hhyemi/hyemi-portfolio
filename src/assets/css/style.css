@@ -179,25 +179,25 @@ html {
     display: block;
     height: 50px;
     bottom: 0;
-    margin: 1rem;
+    margin: 0.5rem;
     color: black;
     cursor: pointer;
     padding: 0rem;
 }
 
 @keyframes pippo {
-  0% {top: 86%}
-  100% {top: 90%}
+  0% {top: 88%}
+  100% {top: 92%}
 }
 
 @keyframes aboutpippo {
-  0% {top: 186vh}
-  100% {top: 190vh}
+  0% {top: 188vh}
+  100% {top: 192vh}
 }
 
 @keyframes skillspippo {
-  0% {top: 286vh}
-  100% {top: 290vh}
+  0% {top: 288vh}
+  100% {top: 292vh}
 }
 
 /* About */
