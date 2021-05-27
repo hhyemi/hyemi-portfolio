@@ -28,7 +28,7 @@ const Skills = () => {
             <Row>▪️ &ensp;Java, C</Row>
             <Row>▪️ &ensp;Spring, Junit</Row>
             <Row>▪️ &ensp;axios, Restful API</Row>
-            <Row>▪️ &ensp;Node, express</Row>
+            <Row>▪️ &ensp;Node, NPM, express</Row>
             <Row>▪️ &ensp;Oracle, MySQL, PostgreSQL</Row>
             <Row>▪️ &ensp;Sequelize, Mybatis</Row>
           </Col>

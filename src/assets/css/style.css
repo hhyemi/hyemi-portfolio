@@ -117,8 +117,8 @@ html {
   bottom: 0; 
   right: 0; 
   z-index: -1;
-  background-image: url(../../../public/img/background.jpg);
-  background-size: 100%;
+  background-image: url(../../../public/img/maink.jpg);
+  background-size: 100% 100vh;
 }
 
 .home-section .container {
@@ -453,6 +453,6 @@ footer i:hover {
   transform: translateY(-2px);
 }
 
-footer .social-links a {
+footer .social-links a:not(:last-child) {
   margin-right: 2rem;
 }
