@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, NavLink } from 'reactstrap';
 
 // eslint-disable-next-line arrow-body-style
 const Skills = () => {
@@ -39,11 +39,27 @@ const Skills = () => {
             <b>Etc</b>
           </Col>
           <Col lg={9} sm={12} className="skill-list">
-            <Row>▪️ &ensp;Tomcat, Jenkins</Row>
+            <Row>▪️ &ensp;Apache Tomcat, Jenkins</Row>
             <Row>▪️ &ensp;Git, GitHub, Sourcetree</Row>
             <Row>▪️ &ensp;Visual Studio Code, IntelliJ, Eclipse</Row>
           </Col>
         </Row>
+        <div className="skills-continue">
+          <a
+            role="button"
+            className="skills-more"
+            href="#projects"
+            data-animation="fade-in"
+            data-animation-duration="500"
+            data-animation-delay="2000"
+            data-animation-offset="0"
+          >
+            CONTINUE
+          </a>
+          <NavLink href="#projects" duration={1000}>
+            <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+          </NavLink>
+        </div>
       </Container>
     </section>
   );

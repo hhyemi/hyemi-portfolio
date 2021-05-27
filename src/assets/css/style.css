@@ -130,31 +130,36 @@ html {
   font-size: 3.5rem;
 }
 
-
-.continue {
+/* continue */
+.continue, .about-continue, .skills-continue {
   display: block;
   overflow: hidden;
   position: absolute;
-  bottom: 0;
   left: calc(50% - 44px);
   text-align: center;
-  
-  /*start animation*/
-  animation-name: pippo;
   animation-duration: 2s ;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes pippo {
-  0% {top: 86%}
-  100% {top: 90%}
+.continue {
+  bottom: 0;
+  animation-name: pippo;
 }
 
-.more{
+.about-continue {
+  bottom: -100vh;
+  animation-name: aboutpippo;
+}
+
+.skills-continue {
+  bottom: -200vh;
+  animation-name: skillspippo;
+}
+
+.more, .about-more, .skills-more{
   color: inherit;
-  display: block;
   width: 90px;
   height: 20px;
   position: relative;
@@ -166,11 +171,11 @@ html {
   color: black;
 }
 
-.continue:hover .more, .continue:hover i{
+.continue:hover .more, .continue:hover i,.about-continue:hover .about-more, .about-continue:hover i, .skills-continue:hover .skills-more, .skills-continue:hover i{
   color: rgb(76 76 76);
 }
 
-.continue .nav-link {
+.continue .nav-link, .about-continue .nav-link, .skills-continue .nav-link {
     display: block;
     height: 50px;
     bottom: 0;
@@ -178,6 +183,21 @@ html {
     color: black;
     cursor: pointer;
     padding: 0rem;
+}
+
+@keyframes pippo {
+  0% {top: 86%}
+  100% {top: 90%}
+}
+
+@keyframes aboutpippo {
+  0% {top: 186vh}
+  100% {top: 190vh}
+}
+
+@keyframes skillspippo {
+  0% {top: 286vh}
+  100% {top: 290vh}
 }
 
 /* About */
@@ -215,7 +235,7 @@ html {
   display: block;
   float: left;
   color: #191919;
-  line-height: 1.6;
+  line-height: 1.9;
   word-break: break-all;
   margin-bottom: 0.5rem;
 }
@@ -244,6 +264,8 @@ html {
 }
 /* skills */
 #skills {
+  min-height: 100vh;
+  height: 100vh;
   background-color: #f0f0f0;
   display: flex;
   align-items: center;
