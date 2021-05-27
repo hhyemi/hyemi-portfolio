@@ -74,6 +74,82 @@ html {
   }
 }
 
+@media (max-width: 37.5em){
+  .project-detail dd  {
+    width: 100% !important;
+    float: initial !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  .project-detail dt {
+    float: initial !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #about dd  {
+    width: 100% !important;
+    float: initial !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #about dt {
+    float: initial !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #skills b, #skills .skill-list .row{
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #about .img-resume {
+    width: 6rem !important;
+    margin-bottom: 0rem !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #about .page-title {
+    margin-bottom: 0.7rem !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  .continue .nav-link, .about-continue .nav-link, .skills-continue .nav-link {
+    margin: 0rem !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  .more, .about-more, .skills-more {
+    font-size: 5px !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #skills .skill-list .row {
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  .page-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 37.5em){
+  #about dl {
+    line-height: 1.6 !important;
+    margin-bottom: 0.4rem !important; 
+  }
+}
+
 /* header */
 .header-div{
   position: fixed;
@@ -191,12 +267,12 @@ html {
 }
 
 @keyframes aboutpippo {
-  0% {top: 180vh}
+  0% {top: 190vh}
   100% {top: 192vh}
 }
 
 @keyframes skillspippo {
-  0% {top: 280vh}
+  0% {top: 290vh}
   100% {top: 292vh}
 }
 
