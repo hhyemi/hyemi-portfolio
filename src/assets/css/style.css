@@ -191,12 +191,12 @@ html {
 }
 
 @keyframes aboutpippo {
-  0% {top: 188vh}
+  0% {top: 180vh}
   100% {top: 192vh}
 }
 
 @keyframes skillspippo {
-  0% {top: 288vh}
+  0% {top: 280vh}
   100% {top: 292vh}
 }
 
